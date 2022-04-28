@@ -1,0 +1,4 @@
+Set ws = CreateObject("Wscript.Shell") 
+ws.run "wsl -d Ubuntu -u root service ssh start", vbhide
+ws.run "wsl -d Ubuntu -u root service apache2 start", vbhide
+ws.run "wsl -d Ubuntu -u root service mysql start", vbhide
